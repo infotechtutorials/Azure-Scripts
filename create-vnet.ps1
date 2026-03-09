@@ -1,11 +1,11 @@
 # Variables
 
-$ResourceGroup = "RG-web-test"
-$Location = "CanadaCentral"
-$VNetName = "vnet-web-test"
-$AddressSpace = "192.168.0.0/16"
-$SubnetName = "default"
-$SubnetPrefix = "192.168.1.0/24"
+$ResourceGroup = "-----"
+$Location = "-----"
+$VNetName = "------"
+$AddressSpace = "--------"
+$SubnetName = "-------"
+$SubnetPrefix = "------"
 
 # Create Subnet configuration
 
