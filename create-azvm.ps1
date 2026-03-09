@@ -4,15 +4,15 @@ ssh-keygen -t rsa -b 4096 -f $env:USERPROFILE\.ssh\"key_name"
 
 # ---- Variables ----- #
 
-$Resource_Group = "RG-web-test"
-$VM_Name = "web-02-test"
-$Location = "CanadaEast"
+$Resource_Group = "-------"
+$VM_Name = "-------"
+$Location = "------"
 $Image = "Ubuntu2404"
 $Size = "Standard_B2als"
-$VNet_Name = "vnet-web-test"
-$Subnet_Name = "subnet-web-test"
-$Admin_User = "azureadmin"
-$SSH_Key = "$env:USERPROFILE\.ssh\web-02-test-key.pub"
+$VNet_Name = "--------"
+$Subnet_Name = "---------"
+$Admin_User = "---------"
+$SSH_Key = "$env:USERPROFILE\.ssh\--------"
 
 az vm create `
    --name $VM_Name `
