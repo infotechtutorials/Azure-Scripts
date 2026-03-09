@@ -1,3 +1,7 @@
+# Create an SSH Key Pair
+
+ssh-keygen -t rsa -b 4096 -f $env:USERPROFILE\.ssh\"key_name"
+
 # ---- Variables ----- #
 
 $Resource_Group = "RG-web-test"
