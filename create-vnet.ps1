@@ -1,13 +1,13 @@
 # Variables
 
-$ResourceGroup = "RG-web-prod"
-$Location = "CanadaCentral"
-$VNetName = "vnet-web-prod"
-$SubnetName = "subnet-web-prod"
+$ResourceGroup = "------------"
+$Location = "------------"
+$VNetName = "------------"
+$SubnetName = "------------"
 
 #  Addressing
-$VNetAddressSpace = "192.168.0.0/16"
-$SubnetPrefix     = "192.168.100.0/24"
+$VNetAddressSpace = "------------"
+$SubnetPrefix     = "------------"
 
 # Create Subnet configuration
 
