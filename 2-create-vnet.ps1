@@ -1,27 +1,27 @@
 # Variables
 
-$ResourceGroup = "------------"
-$Location = "------------"
-$VNetName = "------------"
-$SubnetName = "------------"
+$resourceGroup = "------------"
+$location = "------------"
+$vnetName = "------------"
+$subnetName = "------------"
 
 #  Addressing
-$VNetAddressSpace = "------------"
-$SubnetPrefix     = "------------"
+$vnetAddressSpace = "------------"
+$subnetPrefix     = "------------"
 
 # Create Subnet configuration
 
-$Subnet = New-AzVirtualNetworkSubnetConfig `
-    -Name $SubnetName `
-    -AddressPrefix $SubnetPrefix `
+$subnet = New-AzVirtualNetworkSubnetConfig `
+    -Name $subnetName `
+    -AddressPrefix $subnetPrefix `
     -DefaultOutboundAccess $false
 
 
 # Create Virtual Network
 
 New-AzVirtualNetwork `
-    -ResourceGroupName $ResourceGroup `
-    -Location $Location `
-    -Name $VNetName `
-    -AddressPrefix $VNetAddressSpace `
-    -Subnet $Subnet
+    -ResourceGroupName $resourceGroup `
+    -Location $location `
+    -Name $vnetName `
+    -AddressPrefix $vnetAddressSpace `
+    -Subnet $subnet
