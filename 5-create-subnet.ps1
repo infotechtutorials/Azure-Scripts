@@ -1,19 +1,19 @@
 # Variables
-$ResourceGroup = "---------"
-$VNetName = "----------"
-$SubnetName = "----------"
-$SubnetPrefix = "-----------"
+$resourceGroup = "---------"
+$vnetName = "----------"
+$subnetName = "----------"
+$subnetPrefix = "-----------"
 
 # Get existing VNet
 
 $vnet = Get-AzVirtualNetwork `
-    -ResourceGroupName $ResourceGroup `
-    -Name $VNetName
+    -ResourceGroupName $resourceGroup `
+    -Name $vnetName
 
 # Add subnet to VNet object
 Add-AzVirtualNetworkSubnetConfig `
-    -Name $SubnetName `
-    -AddressPrefix $SubnetPrefix `
+    -Name $subnetName `
+    -AddressPrefix $subnetPrefix `
     -VirtualNetwork $vnet `
     -DefaultOutboundAccess $false
 
