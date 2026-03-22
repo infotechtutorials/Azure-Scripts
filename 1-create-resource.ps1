@@ -1,3 +1,6 @@
+$resourceGroup = "----------"
+$location = "----------"
+
 az group create `
---name #### `
---location #####
+--name $resourceGroup `
+--location $location
