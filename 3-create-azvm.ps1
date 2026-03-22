@@ -1,28 +1,28 @@
 # Create an SSH Key Pair
 
-ssh-keygen -t rsa -b 4096 -f $env:USERPROFILE\.ssh\"key_name"
+ssh-keygen -t rsa -b 4096 -f "$env:USERPROFILE\.ssh\key_name"
 
 # ---- Variables ----- #
 
-$Resource_Group = "-------"
-$VM_Name = "-------"
-$Location = "------"
-$Image = "Ubuntu2404"
-$Size = "Standard_B2als"
-$VNet_Name = "--------"
-$Subnet_Name = "---------"
-$Admin_User = "---------"
+$resourceGroup = "-------"
+$vmName = "-------"
+$location = "------"
+$image = "Ubuntu2404"
+$size = "Standard_B2als"
+$vnetName = "--------"
+$subnetName = "---------"
+$adminUser = "---------"
 $SSH_Key = "$env:USERPROFILE\.ssh\--------"
 
 az vm create `
-   --name $VM_Name `
-   --resource-group $Resource_Group `
-   --location $Location `
-   --image $Image `
-   --size $Size `
-   --vnet-name $VNet_Name `
-   --subnet $Subnet_Name `
-   --admin-username $Admin_User `
+   --name $vmName `
+   --resource-group $resourceGroup `
+   --location $location `
+   --image $image `
+   --size $size `
+   --vnet-name $vnetName `
+   --subnet $subnetName `
+   --admin-username $adminUser `
    --authentication-type ssh `
    --ssh-key-values $SSH_Key `
    --public-ip-address '""' `
