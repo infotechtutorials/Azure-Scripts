@@ -2,5 +2,5 @@ Host *VM Name*
     HostName 127.0.0.1
     User *username*
     Port *tunnel port*
-    IdentityFile C:\Users\raphael\.ssh\*ssh-key*
+    IdentityFile C:\Users\*user*\.ssh\*ssh-key*
     IdentitiesOnly yes
